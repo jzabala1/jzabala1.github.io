@@ -10,10 +10,10 @@
    <script src="selection.js"> </script>
 </head>
 
-<body id ="bagbody">
+<body id ="bagbody" onload="onLoad()">
 	<header>
     <nav>
-      <a href="index.html" id= "logo">FluffStuff</a>
+      <a href="Fluff_Stuff_Home_Page.html" id= "logo">FluffStuff</a>
       <ul>
          <!-- navbar text and links -->
          <li><a href="">All</a></li>
@@ -32,32 +32,39 @@
 
 
   <div class ="heading">
+    <!-- heading elements -->
     <h1 id = "shopheading" class= "bagheading">Shopping Bag</h1>
     <h1 id = "orderheading" class= "bagheading">Order Summary</h1>
   </div> 
 
   <div class ="leftcolumn">
+    <!--Setting up the empty bag -->
     <hr>
     <ul>
-      <li id="itemheading">Item</li>
-      <li>Price</li>
-      <li>Quantity</li>
-      <li>Total</li>
+      <li class = "leftcolumnli" id="itemheading">Item</li>
+      <li class = "leftcolumnli">Price</li>
+      <li class = "leftcolumnli">Quantity</li>
+      <li class = "leftcolumnli">Total</li>
     </ul>
     <hr>
-  </div> 
+    <div id="product-container">
+      <!--This is where products will be added when they are added to the bag-->
+    </div>
+  </div>
   
   <div class ="rightcolumn">
+    <!--Order summary and checkout buttons -->
     <p id="subtotal">Subtotal:</p>
-    <p id="shipping">Shipping: </p>
-    <p id="tax">Estimated Tax: </p>
+    <p id="shipping">Shipping: TBD </p>
+    <p id="tax">Estimated Tax: TBD </p>
     <p id="total">Total: </p>
     <button id="checkout">Proceed to Checkout</button>
   </div> 
-  
 
+  <!-- popup on bag icon-->
+  <div id="popupcircle">0</div>
 
-  <footer>
+  <footer id="bagfoot">
     <!-- line -->
     <hr>
     <!--Shop footer -->
